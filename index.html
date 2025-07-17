@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas - Suitmedia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="logo_suitmedia.png" alt="Suitmedia Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#" class="active">Ideas</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Ideas</h1>
+                <p>Where all our great things begin</p>
+            </div>
+        </section>
+
+        <section class="posts-section">
+            <div class="container">
+                <div class="controls-bar">
+                    <p class="showing-info" id="showing-info">Loading...</p>
+                    <div class="filters">
+                        <label>
+                            Show per page:
+                            <select id="per-page-select">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                            </select>
+                        </label>
+                        <label>
+                            Sort by:
+                            <select id="sort-by-select">
+                                <option value="-published_at">Newest</option>
+                                <option value="published_at">Oldest</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="posts-grid" id="posts-grid">
+                    <!-- Posts akan diisi oleh JavaScript -->
+                </div>
+
+                <div class="pagination" id="pagination">
+                    <!-- Pagination akan diisi oleh JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
